@@ -1,0 +1,7 @@
+{
+  "name": "gg swalayan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
