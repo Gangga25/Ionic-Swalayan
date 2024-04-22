@@ -37,7 +37,7 @@
           <ion-ripple-effect></ion-ripple-effect>
         </ion-item>
 
-        <ion-item lines="full" class="ion-activatable ripple-parent">
+        <ion-item @click="logout" lines="full" class="ion-activatable ripple-parent">
           <ion-icon :icon="personCircleOutline" slot="end"></ion-icon>
           <ion-label class="">
             <h2>Keluar Akun</h2>
@@ -53,6 +53,17 @@
 
 <script setup lang="ts">
 import { personCircleOutline, logOut } from "ionicons/icons";
+import { token, user } from "../services/user";
+import { useRouter } from "vue-router";
+
+const router = useRouter()
+
+const logout = () => {
+  user.value = null
+  token.value = ''
+
+  router.replace('/login')
+}
 </script>
 
 <style>
