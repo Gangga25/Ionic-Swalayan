@@ -32,8 +32,8 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import { axios } from "../../services/axios";
-import { token, user, TUser } from "../../services/user";
+import { axios } from "@/services/axios";
+import { token, user, TUser } from "@/services/user";
 import { useRouter } from "vue-router";
 
 const email = ref('ganggava@gmail.com')
@@ -59,6 +59,7 @@ const login = () => {
         token.value = result.data?.token
 
         router.replace('tabs/tab1')
+        
     }).catch(error => {
         console.log(error)
     })
