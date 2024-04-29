@@ -19,7 +19,7 @@
             <h2>{{ item?.name }}</h2>
             <p>{{ item?.price }}</p>
           </ion-label>
-          <ion-icon aria-hidden="true" :icon="addCircel" slot="end"></ion-icon>
+          <ion-icon aria-hidden="true" :icon="addCircle" slot="end"></ion-icon>
           <ion-ripple-effect></ion-ripple-effect>
         </ion-item>
 
