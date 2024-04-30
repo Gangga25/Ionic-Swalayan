@@ -20,7 +20,7 @@
         <div class="text-center mx-auto">
           <ion-label color="light">
             <h2>GG</h2>
-            <h2>gg@gmail.com</h2>
+            <h2>ganggava@gmail.com</h2>
           </ion-label>
         </div>
 
